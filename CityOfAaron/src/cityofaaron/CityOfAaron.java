@@ -5,17 +5,23 @@
  */
 package cityofaaron;
 
+import View.*;
+
 /**
  *
  * @author Deryk's Boys
  */
 public class CityOfAaron {
-
+private static CityOfAaron theGame = null;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MainMenuView mmv = new MainMenuView();
+        mmv.displayMenu();
+        
+        
     }
     
 }
