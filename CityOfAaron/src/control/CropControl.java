@@ -7,7 +7,7 @@
 
 package control;
 
-import model.cityofaaron.CropData;
+import model.CropData;
 import java.util.Random;
 
 /**

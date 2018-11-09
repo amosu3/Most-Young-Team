@@ -5,7 +5,7 @@
  */
 package control;
 
-import model.cityofaaron.CropData;
+import model.CropData;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

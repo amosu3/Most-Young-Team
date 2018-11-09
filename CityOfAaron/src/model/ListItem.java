@@ -3,18 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.cityofaaron;
+package model;
 
 /**
  *
- * @author German D. De Marco
+ * @author demarcogerman
  */
-
 import java.io.Serializable;
-public class Player implements Serializable{
+public class ListItem implements Serializable {
+    
+    private String name;
+    private int number;
 
-   private String name;
+    public int getNumber() {
+        return number;
+    }
 
+    public void setNumber(int number) {
+        this.number = number;
+    }
+    
     public String getName() {
         return name;
     }
@@ -22,9 +30,5 @@ public class Player implements Serializable{
     public void setName(String name) {
         this.name = name;
     }
-
-    public Player(String name) {
-        this.name = name;
-    }
     
-    }
+}
