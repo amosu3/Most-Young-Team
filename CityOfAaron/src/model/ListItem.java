@@ -10,23 +10,44 @@ package model;
  * @author demarcogerman
  */
 import java.io.Serializable;
+
+/**
+ *
+ * @author jaryger
+ */
 public class ListItem implements Serializable {
     
     private String name;
     private int number;
 
+    /**
+     *
+     * @return
+     */
     public int getNumber() {
         return number;
     }
 
+    /**
+     *
+     * @param number
+     */
     public void setNumber(int number) {
         this.number = number;
     }
     
+    /**
+     *
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     *
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }

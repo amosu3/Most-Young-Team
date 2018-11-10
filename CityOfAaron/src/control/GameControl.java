@@ -5,24 +5,34 @@
  */
 package control;
 
-import model.Game;
-import model.Player;
-import model.CropData;
-import cityofaaron.CityOfAaron;
 
+
+
+import cityofaaron.CityOfAaron;
+import model.*;
+import View.*;
 /**
  *
  * @author jaryger
  */
 public class GameControl {
+private static final int MAX_ROW = 5;
+private static final int MAX_COL = 5;
+
+private static Game theGame;
+private static CropData CropData;
 
     public static void createNewGame(String name) 
     {
-        Game game = new Game();
-        Player Player = new Player();
+
+        theGame = new Game();
+        cityofaaron.CityOfAaron.setTheGame(theGame);
         
-        Player.setName(name);
-       CityOfAaron.setThePlayer(Player);
+        Player thePlayer = new Player();
+        String playerName = null;
+        thePlayer.setName(playerName);
+       
+        model.Player.setThePlayer(thePlayer);
 
         CropData cropData = new CropData();
 
@@ -36,11 +46,12 @@ public class GameControl {
         cropData.setAcresPlanted(1000);
         cropData.setHarvest(3000);
         cropData.setAcresPlanted(1000);
-        game.setCropData(cropData);
-        CityOfAaron.setGame(game);
+        
+        
+        Game.setCropData(cropData);
+        
+        cityofaaron.CityOfAaron.setTheGame(theGame);
     }
 
  
     }
-
-}

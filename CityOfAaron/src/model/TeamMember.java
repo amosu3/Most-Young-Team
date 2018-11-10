@@ -10,12 +10,27 @@ package model;
  * @author German D. De Marco
  */
 import java.io.Serializable;
+
+/**
+ *
+ * @author jaryger
+ */
 public  enum TeamMember implements Serializable{
     
-    
-        memberOne("German", "De Marco"),
-        memberTwo("Nefi", "Verduga"),
-        memberThree("Amosu", "Omoniyi");
+    /**
+     *
+     */
+    memberOne("German", "De Marco"),
+
+    /**
+     *
+     */
+    memberTwo("Nefi", "Verduga"),
+
+    /**
+     *
+     */
+    memberThree("Amosu", "Omoniyi");
     
  TeamMember(String name, String title) {
       this.name = name;
@@ -24,10 +39,18 @@ public  enum TeamMember implements Serializable{
     
     private String name;
 
+    /**
+     *
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getTitle() {
         return title;
     }

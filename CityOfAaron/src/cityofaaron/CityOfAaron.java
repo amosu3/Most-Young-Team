@@ -6,6 +6,9 @@
 package cityofaaron;
 
 import View.*;
+import model.Game;
+import control.*;
+import model.CropData;
 
 /**
  *
@@ -13,6 +16,18 @@ import View.*;
  */
 public class CityOfAaron {
 private static CityOfAaron theGame = null;
+
+
+ public static CityOfAaron getTheGame() {
+        return theGame;
+    }
+    
+
+    public static void setTheGame(Game theGame) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
     /**
      * @param args the command line arguments
      */
@@ -21,7 +36,10 @@ private static CityOfAaron theGame = null;
         MainMenuView mmv = new MainMenuView();
         mmv.displayMenu();
         
-        
-    }
-    
 }
+
+    public CropData getCropData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
+

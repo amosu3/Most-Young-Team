@@ -7,6 +7,8 @@ package View;
 
 import cityofaaron.CityOfAaron;
 import java.util.Scanner;
+import model.*;
+import control.GameControl;
 
 /**
  *
@@ -117,7 +119,7 @@ public class MainMenuView {
         name = keyboard.next();
         
         // Call the createNewGame() method in the GameControl class
-        GameControl.createNewGame();
+        control.GameControl.createNewGame(name);
         
         // Display a welcome message
 
