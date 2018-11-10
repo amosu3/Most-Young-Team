@@ -30,7 +30,7 @@ public class HelpMenuView {
                 + "**********************************\n"
                 + "* CITY OF AARON: HELP GAME MENU  *\n"
                 + "**********************************\n"
-                + " 1 - Start new game\n"
+                + " 1 - View Map Help\n"
                 + " 2 - View Goals \n"
                 + " 3 - View Move Help\n"
                 + " 4 - View List Help"
