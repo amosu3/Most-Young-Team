@@ -48,7 +48,7 @@ private static CropData CropData;
         cropData.setAcresPlanted(1000);
         
         
-        Game.setCropData(cropData);
+        new Game().setCropData(cropData);
         
         cityofaaron.CityOfAaron.setTheGame(theGame);
     }

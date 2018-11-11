@@ -80,7 +80,7 @@ public class Game implements Serializable {
      *
      * @return
      */
-    public CropData getCropData() {
+    public  CropData getCropData() {
         return cropData;
     }
 
@@ -88,7 +88,7 @@ public class Game implements Serializable {
      *
      * @param cropData
      */
-    public void setCropData(CropData cropData) {
+    public void  setCropData(CropData cropData) {
         this.cropData = cropData;
     }
 

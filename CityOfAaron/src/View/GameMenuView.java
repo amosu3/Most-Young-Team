@@ -100,8 +100,7 @@ public class GameMenuView {
     }
     
     public void viewList() {
-    
-   View.ListMenuView.ListMenuView();
+   
     
     }
     
