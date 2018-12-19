@@ -9,22 +9,26 @@ import View.*;
 import model.Game;
 import control.*;
 import model.CropData;
+import model.Map;
 
 /**
  *
- * @author Deryk's Boys
+ * @author De Marco German
  */
 public class CityOfAaron {
-private static CityOfAaron theGame = null;
+// dgw  private static CityOfAaron theGame = null;
+    private static Game theGame = null;
 
 
- public static CityOfAaron getTheGame() {
+ // dgw  public static CityOfAaron getTheGame() {
+ public static Game getTheGame() {
         return theGame;
     }
     
 
-    public static void setTheGame(Game theGame) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public static void setTheGame(Game _Game) {
+        // dgw  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        theGame = _Game;
     }
 
    
@@ -39,6 +43,10 @@ private static CityOfAaron theGame = null;
 }
 
     public CropData getCropData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Map getMap() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

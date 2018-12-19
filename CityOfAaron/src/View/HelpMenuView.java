@@ -17,16 +17,13 @@ import control.GameControl;
 
 
 
-public class HelpMenuView {
+public class HelpMenuView extends MenuView {
     Scanner keyboard = new Scanner(System.in);
-    private String helpMenuView;
-    private int max;
-    
-    
-    
-    public  HelpMenuView(){
-    
-      helpMenuView = "\n"
+
+    public HelpMenuView(){
+    // I add lesson 9 "super"
+        
+      super( "\n"
                 + "**********************************\n"
                 + "* CITY OF AARON: HELP GAME MENU  *\n"
                 + "**********************************\n"
@@ -34,12 +31,13 @@ public class HelpMenuView {
                 + " 2 - View Goals \n"
                 + " 3 - View Move Help\n"
                 + " 4 - View List Help"
-                + " 5 - Quit\n";
-        max = 5;
+                + " 5 - Quit\n",
+        5);
     
     
     }
     
+@Override
     public void doAction(int helpMenuOption) { 
         
         switch (helpMenuOption) {
@@ -62,38 +60,7 @@ public class HelpMenuView {
         
     
     }
-    
-    public void displayMenu() {
-    
-        int helpMenuOption;
-        do {
 
-            System.out.println(helpMenuView);
-            helpMenuOption = getMenuHelpOption();
-            doAction(helpMenuOption);
-
-        } while (helpMenuOption != max);
-    
-    }
-    
-    
-    public int getMenuHelpOption() {
-    
-            int userInput;
-        do {
-
-            userInput = keyboard.nextInt();
-
-            if (userInput < 1 || userInput > max) {
-                System.out.println("Option must be between 1 and " + max);
-
-            }
-
-        } while (userInput < 1 || userInput > max);
-        return userInput;
-    
-    }
-    
     public void viewGoals(){
     
       System.out.print("\n"

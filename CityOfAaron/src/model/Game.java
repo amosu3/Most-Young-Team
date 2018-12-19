@@ -23,7 +23,7 @@ public class Game implements Serializable {
   
     private Player  thePlayer;
     private CropData cropData;
-    private Map map;
+    private Map theMap;
     private ArrayList<ListItem> animals = new ArrayList<>();
     private ArrayList<ListItem> tools = new ArrayList<>();
      private ArrayList<ListItem> provisions = new ArrayList<>();
@@ -97,22 +97,22 @@ public class Game implements Serializable {
      * @return
      */
     public Map getMap() {
-        return map;
+        return theMap;
     }
 
     /**
      *
      * @param map
      */
-    public void setMap(Map map) {
-        this.map = map;
+    public void setMap(Map theMap) {
+        this.theMap = theMap;
     }
 
     /**
      *
      */
     public Game() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // dgw          throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -138,7 +138,12 @@ public class Game implements Serializable {
     public Game(Player thePlayer) {
         this.thePlayer = thePlayer;
     }
-    
+
+    public void setMap(model.Map theMap) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+
     
  
 }
